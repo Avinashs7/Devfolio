@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="icon.png">
+    <title>ReConnect</title>
+</head>
+<body>
+    <script>
+    function togglePopup() {
+    const popup = document.getElementById("login2");
+    popup.style.display = (popup.style.display === "none") ? "block" : "block";
+}
+    function toggleClose()
+    {
+        const popup = document.getElementById("login2");
+    popup.style.display = (popup.style.display === "block") ? "none" : "none";
+    }
+    function registerform()
+    {
+        const popup = document.getElementById("login2");
+        popup.style.display = "none";
+        const reg = document.getElementById("login3");
+        reg.style.display = (reg.style.display === "none")? "block" : "block";
+    }
+    function formClose()
+    {
+        const reg = document.getElementById("login3");
+        reg.style.display = (reg.style.display === "block")? "none" : "none";
+    }
+    </script>
+    <header id="nav">
+        <img id="logo" src="icon.png" alt="Logo">
+        <h1 id="head">ReConnect!</h1>
+        <nav class="navigation">
+            <ul class="list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#help">Help</a></li>
+                <button type="button" onclick="togglePopup()" id="open-btn" class="popup">Login/SignUp</li>
+            </ul>   
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="login" id="login2">
+            <h2>Login/SignUp</h2>
+            <form action="">
+                <button type="button" onclick="toggleClose()" class="close" id="close-btn">X</button>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" class="validate" placeholder="eg:Krishna"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" class="validate" placeholder="password"><br><br>
+                <input type="checkbox" value="Agree terms and conditions"><p>Agree terms and condition</p><br><br>
+                <input type="submit" value="Login" id="submit">
+            </form><br>
+            <p>Don't have an account? <button type="button" onclick="registerform()" class="register" id="Register">Register</button>
+        </div>
+        <div class="form" id="login3">
+            <h2>SignUp</h2>
+            <form action="">
+                <button type="button" onclick="formClose()" class="close" id="close-btn">X</button>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="eg: Aditya"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="eg: Prakash"><br>
+                <label for="phone">Phone number:</label><br>
+                <input type="number" id="phone" name="phno" placeholder="eg: 9687456321"><br>
+                <label for="college"  >College:</label><br>
+                <input type="text" id="college" name="college" placeholder="eg: RNSIT"><br>
+                <label for="aoi"  >Area of interest:</label><br>
+                <input type="text" id="aoi" name="aoi" placeholder="eg: AI, ML, Problem solving etc.."><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" class="validate" placeholder="eg:Krishna@gmail.com"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" class="validate" placeholder="password"><br><br>
+                <input type="checkbox" value="Agree terms and conditions"><p>Agree terms and condition</p><br><br>
+                <input type="submit" value="Sign Up" id="submit">
+            </form><br>
+        </div>
+        <section class="colored-section" id="testimonials">
+            <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active container-fluid" >
+                        <h2 class="testimonial-text">Introducing you to the emerging entrepreneur. His idea was about student database management.
+                        <br> - Ram samuel , RNSIT, India</h2>
+                        <img class="testimonial-image" src="images/pic1.png" alt="Dilip.M">
+                    </div>
+                    <div class="carousel-item container-fluid" >
+                        <h2 class="testimonial-text">The co-founder of sahayog.
+                        <br> -  Tom abhiram, RNSIT, India</h2>
+                        <img class="testimonial-image" src="images/pic2.png" alt="Aditya prakash">
+                    </div>
+                
+                </div>
+                <button class="carousel-control-prev custom-button" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    
+                </button>
+                <button class="carousel-control-next custom-button" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    
+                </button>
+            </div>   
+
+        </section>
+        
+        <section class="startup">
+            <h2>Unleash your ideas</h2>
+            You can present your startup idea here and expect support from the alumini of your college or university who have expertise 
+            in this particular area. Moreover you find passionate people who are interested in your topic. Login to our page and 
+            register yourself to view the emerging start-up idea and to present yours.
+            <br>You can find the people who has established one of the best companies in the world through our website.
+        </section>
+        <section class="startup" id="help">
+        <h2>Your Journey</h2>
+        To kick start your own startUp
+        <ul type="circle">
+            <li>Register yourself</li>
+            <li>Post your idea</li>
+            <li>Keep track of people approaching you</li>
+            <li>Pick the best one</li>
+        </ul>
+        To work on idea in which you are interested
+        <ul type="sqaure">
+            <li>Register yourself</li>
+            <li>Explore the ideas</li>
+            <li>Select based on your interest</li>
+            <li>Work on it</li>
+        </ul>
+        </section>
+        <section class="About" id="about">
+            <h2>About Us</h2>
+        Our main motto is to connect alumini's and people of like mind to unleash their business ideas and 
+        support the idea in which you are interested.
+        </section>
+    </div>
+
+</body>
+<footer class="white-section" id="footer"> 
+    <div class="container-fluid">
+        <div class="contact">
+            Email:
+            <a href="mailto:reconnect@gmail.com">reconnect@gmail.com</a><br>
+            Phone Number:
+            <a href="tel:+91 9645781231">+91 9645781231</a>
+        </div>
+
+        <i class="fa-brands fa-twitter fa-2x footer-icon"></i>
+        <i class="fa-brands fa-meta fa-2x footer-icon"></i>
+        <i class="fa-brands fa-instagram fa-2x footer-icon"></i>
+        <i class="fa-solid fa-envelope fa-2x footer-icon"></i>
+    </div>   
+</footer>
+</html>

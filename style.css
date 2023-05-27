@@ -1,0 +1,267 @@
+
+header{
+    width:100%;
+    height:100px;   
+    float:left;
+    top:0;
+    left:0;
+    display: flex;
+    padding: 16px 32px;
+    margin: auto -16px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#head{
+    font-size: 3em;
+    text-indent: -490px;
+    text-shadow: 2px 2px 5px rgb(245, 196, 196) ;
+    color:rgba(51, 11, 18, 0.914);
+}
+#head::first-letter{
+    color:black;
+    font-size: 1.5em;
+}
+#logo{
+    padding: 10px 5px 10px 60px ;
+    width:100px;
+    position: relative;
+    display: flex;
+    height:60px;
+    float:left
+} 
+#nav {
+    background-color: #00bcd4;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.login
+{
+    position: absolute;
+    top:12%;
+    left:30%;
+    padding:120px;
+    border: 0.1px solid black ;
+    display:none;
+    z-index: 2;
+    backdrop-filter: blur(50px);
+}
+.form
+{
+    position: absolute;
+    top:12%;
+    left:30%;
+    padding:120px;
+    border: 0.1px solid black ;
+    display:none;
+    z-index: 2;
+    backdrop-filter: blur(50px);
+}
+.login #close-btn {
+    position: fixed;
+    top:0px;
+    left:490px;
+    font-size: 2em;
+    border: none;
+    cursor:pointer;
+    color:red;
+}
+.form #close-btn{
+    position: fixed;
+    top:0px;
+    left:390px;
+    font-size: 2em;
+    border: none;
+    cursor:pointer;
+    color:red;
+}
+.login h2{
+    font-weight: 400;
+    color:brown;
+    padding: 0px 45px 45px 45px;
+    text-shadow: 2px 2px 5px black;
+}
+.login input{
+    border:none;
+    border-bottom: 1px solid black;
+    background: transparent;
+}
+.login #submit{
+    border:1px solid black;
+    margin: 0px 65px;
+    border-radius: 6px;
+}
+.login #Register
+{
+    border-radius: 6px;
+    border:none;
+    background: transparent;
+}
+.login #submit:hover{
+    font-size: 1.35em;
+}
+.login #Register:hover
+{
+    font-size: 1.35em;
+    
+}
+p.login a{
+    text-decoration: none;
+}
+.popup{
+    background: transparent;
+    color: black;
+    font-size: 1.07em;
+    border: none;
+    padding:38px 10px 37px 10px;
+}
+
+ul.navigation{
+    position: fixed;
+    display: flex;
+    float:left;
+    background-color: #00bcd4;
+}
+ul.list li{
+    display: inline;
+    float:left;
+    list-style-type: none;
+    padding: 35px 10px 40px 10px;
+    font-size: 1.25em;
+}
+
+ul.list li a:link{
+    color:black;
+    font-size: large;
+    text-decoration: none;
+}
+ul.list li a{
+color:black;
+}
+ul.list li a:hover{
+    color:black;
+    font-size:larger;
+}
+
+.About{
+    width:70%;
+    padding: 40px;
+    border-radius: 20px;
+    margin-left:  160px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0.5px solid black;
+    box-sizing: border-box;
+    clear:left;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float:left;
+    background-color: rgba(242, 200, 117,0.5);
+}
+.colored-section{
+    clear:left;
+    justify-content: center;
+    top:250px;
+    width:auto;
+    height: auto;
+    padding-top: 60px;
+}
+.white-section{
+    background-color: #fff;
+    text-align: center;
+    clear:both;
+    flex: 1;
+    padding: 75px 10px;
+}
+.white-section a:link{
+    color:black;
+    font-size: large;
+    text-decoration: none;
+}
+.white-section a:hover{
+    font-size: larger;
+    text-decoration: none;
+}
+#testimonials
+{
+    width:100%;
+    height: auto;
+    margin:80px 0px;
+    background-color: #e0f2f1;
+}
+.custom-button
+{
+    top:70px;
+    height: 50px;
+    width:50px;
+    background-color: #86e7f4;
+    box-shadow: 2px 2px black;
+    border-radius: 100px;
+}
+.testimonial-text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    color: black;
+    float:left;
+    text-indent: 90px;
+    text-align: center;
+    width:70%;
+    line-height: 1.5;
+}
+.testimonial-image{
+    float: left;
+    width:175px;
+    height: 175px;
+    border-radius: 100px ;
+    margin: 40px;
+}
+.About h2{
+    font-size: 2.5em;
+    color: brown;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkgray;
+}
+.startup
+{
+    clear:left;
+    width:70%;
+    padding: 40px;
+    border-radius: 20px;
+    margin-left:  160px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border: 0.5px solid black;
+    box-sizing: border-box;
+    clear:left;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float:left;
+    background-color: rgba(242, 200, 117,0.5);
+}
+body{
+    background-color: #e0f2f1;
+}
+.startup h2{
+    color: brown;
+    font-size: 2.5em;
+}
+
+/* footer Section */
+.footer-icon{
+    
+    padding: 20px 10px;
+ }
+ .custom-button:hover{
+    color: white;
+    background-color: #86e7f4;
+ }
+ @media screen and (max-width: 800px) {
+    body  {
+        justify-content: center;
+      width: 100%; 
+    }
+  }
+
